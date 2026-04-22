@@ -1,64 +1,87 @@
 # Elite Task Manager
 
-Elite Task Manager is a beginner-friendly React app built with Vite. It includes adding tasks, deleting tasks, marking tasks complete, priority tags, categories, due dates, search, dark/light mode, progress stats, and a responsive premium UI.
+A premium responsive task manager built with **Vite**, **React**, and modern CSS. It helps users create, search, complete, and organize tasks with categories, priority tags, due dates, progress stats, and dark/light mode.
 
-## What Each File Does
+![Elite Task Manager screenshot](docs/app-screenshot.png)
 
-- `package.json` lists the project name, scripts, and packages React/Vite need.
-- `index.html` is the single HTML page Vite loads in the browser.
-- `vite.config.js` tells Vite to use the React plugin.
-- `src/main.jsx` starts React and places the app inside `<div id="root"></div>`.
-- `src/App.jsx` contains the task manager logic, search filtering, due date handling, and JSX layout.
-- `src/styles.css` contains all styling, animations, responsive layout, and theme colors.
+## Features
 
-## Beginner Mac Setup
+- Add new tasks with a title, category, priority, and due date
+- Mark tasks as complete or incomplete
+- Delete tasks from the list
+- Search tasks by title, category, or priority
+- View progress stats for total and completed tasks
+- Organize tasks with categories
+- Use visual priority tags for low, medium, and high priority
+- Switch between light and dark mode
+- Responsive layout for desktop, tablet, and mobile screens
+- Polished UI with cards, animations, and clean spacing
 
-1. Open Terminal.
-2. Move into this project folder:
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+- HTML
+- Git and GitHub
+
+## How To Run This Project
+
+1. Clone or download this repository.
+
+2. Open Terminal and move into the project folder:
 
    ```bash
-   cd /Users/praveenreddy/Documents/Codex/2026-04-22-elite-task-manager
+   cd elite-task-manager
    ```
 
-3. Make sure npm is installed:
-
-   ```bash
-   npm --version
-   ```
-
-   If that says `command not found`, install Node.js from https://nodejs.org. The normal Node installer includes both `node` and `npm`.
-
-4. Install the project packages:
+3. Install the project packages:
 
    ```bash
    npm install
    ```
 
-5. Start the development server:
+4. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-6. Vite will show a local URL, usually:
+5. Open the local URL that Vite shows in Terminal. It usually looks like:
 
    ```text
    http://localhost:5173/
    ```
 
-   Open that URL in your browser.
+## What I Learned
 
-## How The App Works
+- How to create a React project with Vite
+- How to use React state with `useState`
+- How to render lists of tasks with `.map()`
+- How to filter tasks using search text
+- How to handle form inputs, select menus, and date inputs
+- How to calculate progress from completed tasks
+- How to build a responsive layout with CSS Grid and media queries
+- How to style a modern dark/light theme
+- How to use Git and upload a project to GitHub
 
-- `useState` stores tasks, form values, and the current theme.
-- `addTask` runs when you submit the form and adds a new task to the top of the list.
-- `toggleTask` switches a task between complete and incomplete.
-- `deleteTask` removes a task from the list.
-- `searchTerm` stores what you type in the search bar.
-- `filteredTasks` shows only tasks that match the search text.
-- `dueDate` stores the date selected in the date input.
-- `completedCount` and `progress` are calculated from the current tasks.
-- The theme button changes the main CSS class between `light` and `dark`.
+## Project Structure
+
+```text
+elite-task-manager/
+├── docs/
+│   └── app-screenshot.png
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
 
 ## Useful Commands
 
@@ -66,7 +89,7 @@ Elite Task Manager is a beginner-friendly React app built with Vite. It includes
 npm run dev
 ```
 
-Runs the app while you are coding.
+Runs the app while developing.
 
 ```bash
 npm run build
