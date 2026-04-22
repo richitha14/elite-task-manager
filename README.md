@@ -2,6 +2,10 @@
 
 A premium responsive task manager built with **Vite**, **React**, and modern CSS. It helps users create, search, complete, and organize tasks with categories, priority tags, due dates, progress stats, and dark/light mode.
 
+## Live Demo
+
+[View the live app](https://elite-task-manager.vercel.app)
+
 ![Elite Task Manager screenshot](docs/app-screenshot.png)
 
 ## Features
